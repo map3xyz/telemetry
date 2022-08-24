@@ -18,7 +18,7 @@ jobs:
       - uses: volta-cli/action@v1
         with:
           node-version: 14.x
-          yarn-version: 3.2.2
+          yarn-version: berry
 
       - run: yarn install
 
