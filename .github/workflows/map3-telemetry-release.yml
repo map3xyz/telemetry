@@ -16,28 +16,28 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: volta-cli/action@v1
-      - run: npm ci
+      - run: yarn install
 
       - name: Dependencies audit
         run: npm audit
 
       - name: Build
-        run: npm run build
+        run: yarn build
 
       - name: Format check
-        run: npm run format:check
+        run: yarn format:check
 
       - name: Lint check
-        run: npm run lint:check
+        run: yarn lint:check
 
       - name: Spell check
-        run: npm run spell:check
+        run: yarn spell:check
 
       - name: Test
-        run: npm run test
+        run: yarn test
 
       - name: Setup test
-        run: npm run test:setup
+        run: yarn test:setup
 
       - name: Release
         env:
