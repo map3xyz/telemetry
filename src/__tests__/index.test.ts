@@ -8,7 +8,7 @@ describe("foobar()", () => {
 
     describe("when called", () => {
       it("returns the sum of them multiplied by 3", () => {
-        expect(foobar(first, second)).toEqual(9);
+        expect(foobar(first, second)).toEqual(3);
       });
     });
   });

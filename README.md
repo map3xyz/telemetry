@@ -1,35 +1,13 @@
-# Typescript Library Starter
+# Map3 Telemetry Client
 
-![NPM](https://img.shields.io/npm/l/@gjuchault/typescript-library-starter)
-![NPM](https://img.shields.io/npm/v/@gjuchault/typescript-library-starter)
-![GitHub Workflow Status](https://github.com/gjuchault/typescript-library-starter/actions/workflows/typescript-library-starter.yml/badge.svg?branch=main)
+Typescript Client for our telemetry API. 
 
-Yet another (opinionated) typescript library starter template.
-
-## Opinions and limitations
-
-1. Relies as much as possible on each included library's defaults
-2. Only rely on GitHub Actions
-3. Do not include documentation generation
-
-## Getting started
-
-1. `npx degit gjuchault/typescript-library-starter my-project` or click on `Use this template` button on GitHub!
-2. `cd my-project`
-3. `npm install`
-4. `git init` (if you used degit)
-5. `npm run setup`
+![GitHub Workflow Status](https://github.com/map3xyz/telemetry/actions/workflows/map3-telemetry-release.yml/badge.svg?branch=main)
 
 To enable deployment, you will need to:
 
 1. Setup `NPM_TOKEN` secret in GitHub actions ([Settings > Secrets > Actions](https://github.com/gjuchault/typescript-service-starter/settings/secrets/actions))
 2. Give `GITHUB_TOKEN` write permissions for GitHub releases ([Settings > Actions > General](https://github.com/gjuchault/typescript-service-starter/settings/actions) > Workflow permissions)
-
-## Features
-
-### Node.js, npm version
-
-Typescript Library Starter relies on [volta](https://volta.sh/) to ensure node version to be consistent across developers. It's also used in the GitHub workflow file.
 
 ### Typescript
 
