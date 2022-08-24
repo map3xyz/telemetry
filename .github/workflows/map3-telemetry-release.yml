@@ -31,9 +31,6 @@ jobs:
       - name: Test
         run: yarn test
 
-      - name: Setup test
-        run: yarn test:setup
-
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
