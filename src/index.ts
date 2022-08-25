@@ -12,6 +12,7 @@ export function track(
     action: TelemetryAction,
     label?: string,
     clientId?: string,
+    value?: number
   ): void {
 
     if(!clientId) { 
@@ -25,7 +26,8 @@ export function track(
       category,
       action,
       label,
-      clientId
+      clientId,
+      value
     }).then(
       // ignore successful response
     ).catch(error => {
