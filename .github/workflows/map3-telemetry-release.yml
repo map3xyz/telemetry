@@ -15,32 +15,24 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: volta-cli/action@v1
-      - run: npm ci
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - run: yarn install
 
       - name: Dependencies audit
         run: npm audit
 
       - name: Build
-        run: npm run build
-
-      - name: Format check
-        run: npm run format:check
-
-      - name: Lint check
-        run: npm run lint:check
-
-      - name: Spell check
-        run: npm run spell:check
+        run: yarn build
 
       - name: Test
-        run: npm run test
-
-      - name: Setup test
-        run: npm run test:setup
+        run: yarn test
 
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm run semantic-release
+        run: yarn semantic-release
