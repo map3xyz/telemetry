@@ -44,7 +44,8 @@
     "spell:check": "cspell \"{README.md,CODE_OF_CONDUCT.md,CONTRIBUTING.md,.github/*.md,src/**/*.ts}\"",
     "cz": "cz",
     "semantic-release": "semantic-release",
-    "start": "yarn ts-node src/index.ts"
+    "start": "yarn ts-node src/index.ts",
+    "build-and-version-path": "yarn build && npm version patch"
   },
   "devDependencies": {
     "@ryansonshine/commitizen": "^4.2.8",
