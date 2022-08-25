@@ -4,7 +4,7 @@ export type TelemetryCategory = 'oss' | // users that self-host the application
 
 type SiteAction = 'waiting_list_signup';
 type ApiAction = 'start' | 'db_download';
-type AppAction = 'signup';
+type AppAction = 'signup' | 'api_key_generated' | 'star_block_showed';
 type GithubAction = 'stats';
 
 export type TelemetryAction = ApiAction | AppAction | SiteAction | GithubAction; 
