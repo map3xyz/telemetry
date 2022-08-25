@@ -1,6 +1,6 @@
 {
   "name": "@map3xyz/telemetry",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Client library for the Map3 Telemetry API",
   "keywords": [
     "typescript",
@@ -44,7 +44,8 @@
     "spell:check": "cspell \"{README.md,CODE_OF_CONDUCT.md,CONTRIBUTING.md,.github/*.md,src/**/*.ts}\"",
     "cz": "cz",
     "semantic-release": "semantic-release",
-    "start": "yarn ts-node src/index.ts"
+    "start": "yarn ts-node src/index.ts",
+    "build-and-version-path": "yarn build && npm version patch"
   },
   "devDependencies": {
     "@ryansonshine/commitizen": "^4.2.8",
