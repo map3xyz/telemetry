@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@lukeed/uuid", "npm:2.0.0"],\
             ["@ryansonshine/commitizen", "npm:4.2.8"],\
             ["@ryansonshine/cz-conventional-changelog", "npm:3.3.4"],\
             ["@semantic-release/changelog", "virtual:fc7fadfd4302731575cb355ce8bb241317238134426fa44696eeb79c4893c34aba2210ffdd52f2f541d12f9cbe982bfba042d01d24721e072c673468d9ccd541#npm:6.0.1"],\
@@ -44,6 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/prompts", "npm:2.4.0"],\
             ["@typescript-eslint/eslint-plugin", "virtual:fc7fadfd4302731575cb355ce8bb241317238134426fa44696eeb79c4893c34aba2210ffdd52f2f541d12f9cbe982bfba042d01d24721e072c673468d9ccd541#npm:5.34.0"],\
             ["@typescript-eslint/parser", "virtual:fc7fadfd4302731575cb355ce8bb241317238134426fa44696eeb79c4893c34aba2210ffdd52f2f541d12f9cbe982bfba042d01d24721e072c673468d9ccd541#npm:5.34.0"],\
+            ["axios", "npm:0.27.2"],\
             ["c8", "npm:7.12.0"],\
             ["cspell", "npm:6.8.0"],\
             ["esbuild", "npm:0.15.5"],\
@@ -58,6 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:19.0.5"],\
             ["slugify", "npm:1.6.5"],\
             ["source-map-support", "npm:0.5.21"],\
+            ["ts-node", "virtual:c0eab07e71af57f5501e97e7ca7a2a4f4965035bd2455ad124a8b09fa55780657c55fe3df41019fa6c2c44487c897668c842a0939e380b3c1f13b3756d128543#npm:10.9.1"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=f456af"],\
             ["vite", "virtual:fc7fadfd4302731575cb355ce8bb241317238134426fa44696eeb79c4893c34aba2210ffdd52f2f541d12f9cbe982bfba042d01d24721e072c673468d9ccd541#npm:3.0.9"],\
             ["vitest", "virtual:fc7fadfd4302731575cb355ce8bb241317238134426fa44696eeb79c4893c34aba2210ffdd52f2f541d12f9cbe982bfba042d01d24721e072c673468d9ccd541#npm:0.21.1"]\
@@ -1060,11 +1063,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@lukeed/csprng", [\
+        ["npm:1.0.1", {\
+          "packageLocation": "./.yarn/cache/@lukeed-csprng-npm-1.0.1-de3ac370f2-fd84d68327.zip/node_modules/@lukeed/csprng/",\
+          "packageDependencies": [\
+            ["@lukeed/csprng", "npm:1.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@lukeed/uuid", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/@lukeed-uuid-npm-2.0.0-df2e18af82-7d55c0a9f2.zip/node_modules/@lukeed/uuid/",\
+          "packageDependencies": [\
+            ["@lukeed/uuid", "npm:2.0.0"],\
+            ["@lukeed/csprng", "npm:1.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@map3xyz/telemetry", [\
         ["workspace:.", {\
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@map3xyz/telemetry", "workspace:."],\
+            ["@lukeed/uuid", "npm:2.0.0"],\
             ["@ryansonshine/commitizen", "npm:4.2.8"],\
             ["@ryansonshine/cz-conventional-changelog", "npm:3.3.4"],\
             ["@semantic-release/changelog", "virtual:fc7fadfd4302731575cb355ce8bb241317238134426fa44696eeb79c4893c34aba2210ffdd52f2f541d12f9cbe982bfba042d01d24721e072c673468d9ccd541#npm:6.0.1"],\
@@ -1076,6 +1099,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/prompts", "npm:2.4.0"],\
             ["@typescript-eslint/eslint-plugin", "virtual:fc7fadfd4302731575cb355ce8bb241317238134426fa44696eeb79c4893c34aba2210ffdd52f2f541d12f9cbe982bfba042d01d24721e072c673468d9ccd541#npm:5.34.0"],\
             ["@typescript-eslint/parser", "virtual:fc7fadfd4302731575cb355ce8bb241317238134426fa44696eeb79c4893c34aba2210ffdd52f2f541d12f9cbe982bfba042d01d24721e072c673468d9ccd541#npm:5.34.0"],\
+            ["axios", "npm:0.27.2"],\
             ["c8", "npm:7.12.0"],\
             ["cspell", "npm:6.8.0"],\
             ["esbuild", "npm:0.15.5"],\
@@ -1090,6 +1114,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:19.0.5"],\
             ["slugify", "npm:1.6.5"],\
             ["source-map-support", "npm:0.5.21"],\
+            ["ts-node", "virtual:c0eab07e71af57f5501e97e7ca7a2a4f4965035bd2455ad124a8b09fa55780657c55fe3df41019fa6c2c44487c897668c842a0939e380b3c1f13b3756d128543#npm:10.9.1"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=f456af"],\
             ["vite", "virtual:fc7fadfd4302731575cb355ce8bb241317238134426fa44696eeb79c4893c34aba2210ffdd52f2f541d12f9cbe982bfba042d01d24721e072c673468d9ccd541#npm:3.0.9"],\
             ["vitest", "virtual:fc7fadfd4302731575cb355ce8bb241317238134426fa44696eeb79c4893c34aba2210ffdd52f2f541d12f9cbe982bfba042d01d24721e072c673468d9ccd541#npm:0.21.1"]\
@@ -2460,6 +2485,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/at-least-node-npm-1.0.0-2b36e661fa-463e2f8e43.zip/node_modules/at-least-node/",\
           "packageDependencies": [\
             ["at-least-node", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["axios", [\
+        ["npm:0.27.2", {\
+          "packageLocation": "./.yarn/cache/axios-npm-0.27.2-dbe3a48aea-38cb754046.zip/node_modules/axios/",\
+          "packageDependencies": [\
+            ["axios", "npm:0.27.2"],\
+            ["follow-redirects", "virtual:dbe3a48aea1dd5649e16abaf23d4ae05582d2149e16141955113766a0f84f681baf358c77ddccfc82eb23e4ccc66c6c912df62a9c01f2a83f1842bf86cc297b1#npm:1.15.1"],\
+            ["form-data", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4817,6 +4853,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["follow-redirects", [\
+        ["npm:1.15.1", {\
+          "packageLocation": "./.yarn/cache/follow-redirects-npm-1.15.1-6b191885cd-6aa4e3e3cd.zip/node_modules/follow-redirects/",\
+          "packageDependencies": [\
+            ["follow-redirects", "npm:1.15.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:dbe3a48aea1dd5649e16abaf23d4ae05582d2149e16141955113766a0f84f681baf358c77ddccfc82eb23e4ccc66c6c912df62a9c01f2a83f1842bf86cc297b1#npm:1.15.1", {\
+          "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-659894389a/0/cache/follow-redirects-npm-1.15.1-6b191885cd-6aa4e3e3cd.zip/node_modules/follow-redirects/",\
+          "packageDependencies": [\
+            ["follow-redirects", "virtual:dbe3a48aea1dd5649e16abaf23d4ae05582d2149e16141955113766a0f84f681baf358c77ddccfc82eb23e4ccc66c6c912df62a9c01f2a83f1842bf86cc297b1#npm:1.15.1"],\
+            ["@types/debug", null],\
+            ["debug", null]\
+          ],\
+          "packagePeers": [\
+            "@types/debug",\
+            "debug"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["foreground-child", [\
         ["npm:2.0.0", {\
           "packageLocation": "./.yarn/cache/foreground-child-npm-2.0.0-80c976b61e-f77ec9aff6.zip/node_modules/foreground-child/",\
@@ -4833,6 +4891,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/form-data-npm-3.0.1-d080d436e0-b019e8d35c.zip/node_modules/form-data/",\
           "packageDependencies": [\
             ["form-data", "npm:3.0.1"],\
+            ["asynckit", "npm:0.4.0"],\
+            ["combined-stream", "npm:1.0.8"],\
+            ["mime-types", "npm:2.1.35"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/form-data-npm-4.0.0-916facec2d-01135bf867.zip/node_modules/form-data/",\
+          "packageDependencies": [\
+            ["form-data", "npm:4.0.0"],\
             ["asynckit", "npm:0.4.0"],\
             ["combined-stream", "npm:1.0.8"],\
             ["mime-types", "npm:2.1.35"]\
