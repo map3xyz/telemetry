@@ -2,8 +2,8 @@ export type TelemetrySource = 'api' | 'app' | 'site' | 'github';
 export type TelemetryCategory = 'oss' | // users that self-host the application
                                 'map3'; // map3 hosted service
 
-type SiteAction = 'waitinglist';
-type ApiAction = 'start';
+type SiteAction = 'waiting_list_signup';
+type ApiAction = 'start' | 'db_download';
 type AppAction = 'signup';
 type GithubAction = 'stats';
 
