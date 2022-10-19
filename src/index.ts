@@ -4,7 +4,7 @@ import axios from 'axios';
 
 export * from "./types";
 
-const url = 'https://map3xyz/api/telemetry';
+const url = 'https://console.map3.xyz/api/telemetry';
 
 export function track(
     source: TelemetrySource,
