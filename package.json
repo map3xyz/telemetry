@@ -1,6 +1,6 @@
 {
   "name": "@map3xyz/telemetry",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Client library for the Map3 Telemetry API",
   "keywords": [
     "typescript",
